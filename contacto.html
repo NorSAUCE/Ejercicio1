@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+     <title>Contacto | Seguro No Pagamos Cooperativa</title>
+     <meta charset="utf-8">
+     <meta name = "description" content="empresa de seguros"/>
+     <meta name="keywords" content="seguros"/>
+     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+     <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1,
+      maximum-scale=1, minimum-scale=1">
+	  <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="css/contacto.css">
+    </head>
+    <body>
+       <header>
+	   <div class="contenedor">
+	       <h1 class="logotipo">Seguro No Pagamos Cooperativa</h1>
+	        <input type="checkbox" id="menu-bar">
+			<label class="icon-menu" for="menu-bar"></label>
+          <nav class="menu">
+            <a href=""class="menu__link">Inicio</a>
+			<a href="" class="menu__link">Nosotros</a>
+			<a href="" class="menu__link">Servicios</a>
+			<a href=""class="menu__link menu__link--select">Contacto</a>
+         </nav>
+		</div>	
+	   </header>
+	   
+	   <section id="banner">
+	         <img src="banner.jpg">
+			<div class="contenedor">
+			 <h2>Estamos a su disposición</h2>
+			</div> 
+	   </section>
+             
+	   <main class="main">
+          <section class="group contact">
+              <h2 class="group__title">Contáctenos</h2>
+              <div class= "contenedor--flex">
+                  <div class="contact-information column--50">
+                      <h3 class="column_title">Información de Contacto</h3>
+                      <p class="column_txt">Comuniquese con nosotros o envíenos sus datos y a la brevedad uno de nuestros asesores lo contactará.</p>
+                      <p class="column__txt icon-phone">Teléfono 1 : +54 379 5000000</p>
+                      <p class="column__txt icon-phone">Teléfono 2 : +54 379 4000000</p>
+                      <p class="column__txt icon-location">Corrientes Capital, Argentina</p>
+                      <p class="column__txt icon-mail">seguros@hotmail.com</p>
+                  </div>
+                  <form action="" method="post "class="formulario column column--50">
+                      <label class="formulario__label">Nombre:</label>
+                      <input class="input formulario__input-txt" name="nombre" id="nom" maxlength="20">
+                      <label class="formulario__label">Apellido:</label>
+                      <input class="input formulario__input-txt" name="motivo" id="asunto" maxlength="40">
+                      <label class="formulario__label">Teléfono:</label>
+                      <input class="input formulario__input-txt" name="documento" id="dni" maxlength="20">
+                      <label class="formulario__label">DNI:</label>
+                      <input class="input formulario__input-txt" name="telefono" id="tel" maxlength="20">
+                       <label class="formulario__label">Correo:</label>
+                       <input class="input formulario__input-txt" name="correo" id="email">
+                       <div>
+                        <label class="formulario__label">Tipo de Seguro</label>
+                        <select class="tipo" name="seguro" id="seguroId" onchange="mostrarImporte()">
+                            <option value="1">Básico</option>
+                            <option value="2">Intermedio</option>
+                            <option value="3">Premium</option>
+                        </select>
+                        <span id="importeSeguro" class="importe"></span>
+                    </div>
+
+                      <input type="submit" class="formulario__btn" value="Enviar">
+                  </form>
+              </div>
+           </section>
+
+	   
+  
+	   </main>	   
+	   <footer>
+	         <div class="contenedor">
+	         <p class="copy">Seguros No Pagamos Cooperativa &copy; 2021</p>
+			  <div class="sociales">
+			     <a class="icon-facebook"href="#"></a>
+				 <a class="icon-twitter"href="#"></a>
+				 <a class="icon-instagram"href="#"></a>
+				 <a class="icon-google"href="#"></a>
+			  </div>
+			 </div>
+	  </footer>
+    </body>
+    <script src="js/script.js"></script>	
+</html>
